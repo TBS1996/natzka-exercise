@@ -1,5 +1,3 @@
-//! An example showing off the usage of `Deserialize` to automatically decode
-//! TOML into a Rust `struct`
 
 use clap::Parser;
 use serde_derive::Deserialize;

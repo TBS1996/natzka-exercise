@@ -1,8 +1,23 @@
 [[task]]
-name = "signal desktop"
-path = "/nix/store/8x9r22b73lcvwqyq538951fdaizpcf4b-signal-desktop-5.54.0/bin/signal-desktop"
+name = "firefox"
+path = "/usr/bin/firefox"
 arguments = ["arg1", "arg2"]
 non_error_codes = [3, 1, -2]
 restart_condition = "OnError"
 
 
+[[task]]
+name = "thunderbird"
+path = "/usr/bin/thunderbird"
+arguments = ["arg1", "arg2"]
+non_error_codes = [3, 1, -2]
+restart_condition = "Always"
+
+
+
+[[task]]
+name = "nautilus"
+path = "/usr/bin/nautilus"
+arguments = ["arg1", "arg2"]
+non_error_codes = [3, 1, -2]
+restart_condition = "Never"
